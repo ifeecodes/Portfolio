@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ifechukwu Ikenta | Frontend Web Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Falling petals -->
+    <div class="petals-container" aria-hidden="true">
+      <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+      <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+      <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+      <div class="petal"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="navbar-container">
@@ -51,6 +60,7 @@
     <section id="home" class="hero">
         <div class="container hero-container">
             <div class="hero-content">
+                <span class="hero-eyebrow">Available for work</span>
                 <h1 class="hero-title">Ifechukwu Ikenta</h1>
                 <p class="hero-subtitle">Frontend Web Developer + <br>UI/UX Designer</p>
                 <p class="hero-tagline">I help businesses attract more clients with websites that convert visitors into customers.</p>
@@ -58,9 +68,19 @@
                     <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="#contact" class="btn btn-secondary">Hire Me</a>
                 </div>
+                <div class="hero-palette" aria-hidden="true">
+                  <div class="hero-palette-dot"></div>
+                  <div class="hero-palette-dot"></div>
+                  <div class="hero-palette-dot"></div>
+                  <div class="hero-palette-dot"></div>
+                  <div class="hero-palette-dot"></div>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="https://via.placeholder.com/400x400?text=Your+Photo" alt="Ifechukwu Ikenta">
+                <div class="hero-image-wrap">
+                  <img src="https://via.placeholder.com/400x400?text=Your+Photo" alt="Ifechukwu Ikenta">
+                  <div class="hero-badge">Frontend Dev ✦ UI/UX</div>
+                </div>
             </div>
         </div>
     </section>
@@ -68,7 +88,7 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-title-wrap"><h2 class="section-title">About Me</h2><div class="section-title-bar"><span></span><span></span><span></span></div></div>
             <div class="about-content">
                 <div class="about-text">
                     <p>
@@ -108,7 +128,7 @@ Whether you need a business website, landing page, or portfolio, my goal is to t
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <div class="section-title-wrap"><h2 class="section-title">Skills</h2><div class="section-title-bar"><span></span><span></span><span></span></div></div>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon">
@@ -184,7 +204,7 @@ Whether you need a business website, landing page, or portfolio, my goal is to t
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Student+Planner" alt="Student Planner">
+                        <img src="img/screencapture-file-C-Users-Ifechukwu-s-PC-Documents-Coding-finalproject2-home-html-2026-03-02-10_04_09.png" alt="Student Planner">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Student Planner</h3>
@@ -206,7 +226,7 @@ Whether you need a business website, landing page, or portfolio, my goal is to t
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Coffee+Shop" alt="Coffee Shop Website">
+                        <img src="img/CoffeeShopWeb.png" alt="Coffee Shop Website">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Coffee Shop Website</h3>
@@ -220,15 +240,15 @@ Whether you need a business website, landing page, or portfolio, my goal is to t
                             <span class="tech-tag">JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                            <a href="http://127.0.0.1:5501/index.html" class="btn btn-small btn-primary">Live Demo</a>
+                            <a href="https://github.com/ifeecodes/coffee-ecommerce-web" class="btn btn-small btn-secondary">GitHub</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=E-commerce" alt="E-commerce Site">
+                        <img src="img/glamazon.png" alt="E-commerce Site">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">E-commerce Product Grid</h3>
@@ -242,8 +262,8 @@ Whether you need a business website, landing page, or portfolio, my goal is to t
                             <span class="tech-tag">JavaScript</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small btn-primary">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                            <a href="http://127.0.0.1:5501/glam.html" class="btn btn-small btn-primary">Live Demo</a>
+                            <a href="https://github.com/ifeecodes/ecommerce-website" class="btn btn-small btn-secondary">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -254,7 +274,7 @@ Whether you need a business website, landing page, or portfolio, my goal is to t
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Services</h2>
+            <div class="section-title-wrap"><h2 class="section-title">Services</h2><div class="section-title-bar"><span></span><span></span><span></span></div></div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
@@ -302,7 +322,7 @@ Whether you need a business website, landing page, or portfolio, my goal is to t
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-title-wrap"><h2 class="section-title">Get In Touch</h2><div class="section-title-bar"><span></span><span></span><span></span></div></div>
             <div class="contact-content">
                 <p class="contact-intro">Have a project in mind? Let's work together to bring your ideas to life.</p>
                 
@@ -328,7 +348,7 @@ Whether you need a business website, landing page, or portfolio, my goal is to t
                 <div class="contact-info">
                     <div class="contact-item">
                         <h3>Email</h3>
-                        <a href="mailto:ifechukwu@example.com">ifechukwuikenta@gmail.com</a>
+                        <a href="/cdn-cgi/l/email-protection#f49d9291979c819f8381b4918c9599849891da979b99"><span class="__cf_email__" data-cfemail="cfa6a9aaaca7baa4b8baa6a4aaa1bbae8fa8a2aea6a3e1aca0a2">[email&#160;protected]</span></a>
                     </div>
                     <div class="contact-item">
                         <h3>WhatsApp</h3>
@@ -349,11 +369,11 @@ Whether you need a business website, landing page, or portfolio, my goal is to t
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Ifechukwu Ikenta</h3>
-                    <p>Frontend Web Developer</p>
+                    <p>Web Developer + UI/UX Designer</p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
-                    <ul>
+                    <ul class="quick-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
@@ -363,10 +383,11 @@ Whether you need a business website, landing page, or portfolio, my goal is to t
                 <div class="footer-section">
                     <h3>Social Links</h3>
                     <ul class="social-links">
-                        <li><a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
-                        <li><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-                        <li><a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a></li>
-                        <li><a href="#" aria-label="Email"><i class="bi bi-envelope"></i>a</a></li>
+                        <li><a href="https://github.com/ifeecodes" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ifechukwu-ikenta-816464393/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/ifee_codes" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a href="mailto:ifechukwuikenta@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a></li>
+                        <li><a href="https://www.instagram.com/ifee_code_design/"><i class="bi bi-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -375,7 +396,6 @@ Whether you need a business website, landing page, or portfolio, my goal is to t
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="script.js"> </script>
 </body>
 </html>

@@ -1,4 +1,5 @@
-// ==================== DOM ELEMENTS ==================== //
+
+        // ==================== DOM ELEMENTS ==================== //
 const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('navMenu');
 const themeToggle = document.getElementById('themeToggle');
@@ -246,3 +247,4 @@ contactForm.addEventListener('submit', (e) => {
         submitBtn.disabled = false;
     }, 3000);
 });
+   

@@ -45,10 +45,10 @@
   --glass-bg-hover: rgba(255, 255, 255, 0.08);
 
   /* Radii */
-  --radius-xl: 2.5rem;
-  --radius-lg: 1.5rem;
-  --radius-md: 1rem;
-  --radius-sm: 0.5rem;
+  --radius-xl: .5rem;
+  --radius-lg: .5rem;
+  --radius-md: .5rem;
+  --radius-sm: .25rem;
 
   /* Shadows */
   --shadow-glow: 0 0 60px rgba(108, 8, 32, 0.15);
@@ -395,24 +395,6 @@ h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.04em; line-height: 1.05; }
 .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
 
 /* Colour chips strip — decorative */
-.hero-palette {
-  display: flex;
-  gap: 6px;
-  margin-top: 2rem;
-  align-items: center;
-}
-
-.hero-palette-dot {
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-
-.hero-palette-dot:nth-child(1) { background: var(--burgundy); }
-.hero-palette-dot:nth-child(2) { background: var(--cherry); }
-.hero-palette-dot:nth-child(3) { background: var(--misty); }
-.hero-palette-dot:nth-child(4) { background: var(--silver-blue); }
-.hero-palette-dot:nth-child(5) { background: var(--lapis); }
 
 .hero-image {
   opacity: 0;
@@ -681,11 +663,11 @@ section { padding: 6rem 0; }
 }
 
 /* Subtle colored top edge per card — cycles palette */
-.skill-card:nth-child(5n+1)::before { background: var(--burgundy); }
+.skill-card:nth-child(5n+1)::before { background: var(--cherry); }
 .skill-card:nth-child(5n+2)::before { background: var(--cherry); }
-.skill-card:nth-child(5n+3)::before { background: var(--silver-blue); }
-.skill-card:nth-child(5n+4)::before { background: var(--lapis); }
-.skill-card:nth-child(5n+5)::before { background: var(--misty); }
+.skill-card:nth-child(5n+3)::before { background: var(--cherry); }
+.skill-card:nth-child(5n+4)::before { background: var(--cherry); }
+.skill-card:nth-child(5n+5)::before { background: var(--cherry); }
 
 .skill-card::before {
   content: '';

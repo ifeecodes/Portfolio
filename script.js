@@ -1,3 +1,18 @@
+// ==================== PROJECT TABS ==================== //
+const projectTabs = document.querySelectorAll('.project-tab');
+const projectTabContents = document.querySelectorAll('.project-tab-content');
+
+projectTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-tab');
+
+        projectTabs.forEach(t => t.classList.remove('active'));
+        projectTabContents.forEach(c => c.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById('tab-' + target).classList.add('active');
+    });
+});
 
         // ==================== DOM ELEMENTS ==================== //
 const menuToggle = document.getElementById('menuToggle');
@@ -247,4 +262,3 @@ contactForm.addEventListener('submit', (e) => {
         submitBtn.disabled = false;
     }, 3000);
 });
-   
